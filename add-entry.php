@@ -6,7 +6,7 @@ include_once('MyClass.php');
 $data = new Example();
 
 // if post, add post to database
-if(isset($_POST)){
+if(isset($_POST['submit'])){
 	// use the add_new_account method to add the new record to the database
 	$data->add_new_account(htmlentities($_POST['name'], ENT_QUOTES), htmlentities($_POST['location'], ENT_QUOTES), htmlentities($_POST['age'], ENT_QUOTES), htmlentities($_POST['occupation'], ENT_QUOTES), htmlentities($_POST['account_status'], ENT_QUOTES));
 	
