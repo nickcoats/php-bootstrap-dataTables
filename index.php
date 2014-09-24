@@ -56,7 +56,7 @@ include('inc/header.php');
 							<option value="1">Inactive</option>
 						</select>
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" name="submit" class="btn btn-primary">Submit</button>
 				<form>
 		      </div>
 		      <div class="modal-footer">
