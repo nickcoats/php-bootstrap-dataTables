@@ -1,17 +1,17 @@
 <?php
-$pagetitle = "SMSgrupp Demo";
+$pagetitle = "Home";
 
 // include the class that does all of the DB functionality for the app
 include_once('MyClass.php');
 
 // call the object
-$smsgrupp = new Example();
+$data = new Example();
 
 // include header
 include('inc/header.php');
 ?>
 		<section class="section_title">
-			<h3 class="span10">SMSgrupp Demo - PHP with jQuery dataTables</h3>
+			<h3 class="span10">PHP with jQuery dataTables</h3>
 		</section>
 		
 		<section class="section_add">
@@ -81,7 +81,7 @@ include('inc/header.php');
 		  	<tbody>
 		  		<!-- fetch dataTable data by calling the fetch_active_table_data() method
 		  		      and loop through the data/create the rows -->
-		  	    <?php foreach($smsgrupp->fetch_active_table_data() as $row) { ?> 
+		  	    <?php foreach($data->fetch_active_table_data() as $row) { ?> 
 		  	  	<tr>
 		  	  		<td><?php echo $row['id']; ?></td>
 		  	  		<td><?php echo $row['name']; ?></td>
